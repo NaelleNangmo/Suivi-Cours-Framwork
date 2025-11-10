@@ -1,0 +1,44 @@
+        <main>
+            <h2 class="alert alert-info text-center" > Formulaire d'enrollement</h2>
+        
+            <form action="traitement.php" method="post" class="w-50 mx-auto">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nom" required name="nom">
+                    <label for="floatingInput">Nom</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Prenom" required name="prenom">
+                    <label for="floatingPassword">Prenom</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <select class="form-select mb-3" aria-label="Default select example " required name="sexe">
+                        <option value="1">Masculin</option>
+                        <option value="2">Feminin</option>
+                    </select>
+                    <label for="floatingPassword">Sex</label>
+                </div>
+            
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required name="email">
+                    <label for="floatingInput">Email address</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required name="password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="cols d-flex justify-content-between">
+                    <div >
+                        <input type="reset" value="Reinitaliser" class="btn btn-danger mt-3">
+                    </div>
+                    <div >
+                        <input type="submit" value="S'enroller" class="btn btn-success mt-3">
+                    </div>
+                </div>
+
+            </form>
+
+        </main>
