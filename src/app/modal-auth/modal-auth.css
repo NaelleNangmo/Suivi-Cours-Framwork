@@ -1,0 +1,18 @@
+.modal-content {
+  border-radius: 1rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #198754;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.btn-success, .btn-primary {
+  border-radius: 0.5rem;
+  font-weight: 600;
+}

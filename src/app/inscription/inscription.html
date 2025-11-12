@@ -1,44 +1,40 @@
-        <main>
-            <h2 class="alert alert-info text-center" > Formulaire d'enrollement</h2>
-        
-            <form action="traitement.php" method="post" class="w-50 mx-auto">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nom" required name="nom">
-                    <label for="floatingInput">Nom</label>
-                </div>
+<main class="container my-5">
+  <div class="card shadow-lg border-0 rounded-4 p-4 mx-auto" style="max-width: 600px;">
+    <h2 class="text-center text-success fw-bold mb-4">Formulaire d’enrôlement</h2>
 
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingPassword" placeholder="Prenom" required name="prenom">
-                    <label for="floatingPassword">Prenom</label>
-                </div>
+    <form action="traitement.php" method="post">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="nom" placeholder="Nom" required name="nom">
+        <label for="nom">Nom</label>
+      </div>
 
-                <div class="form-floating mb-3">
-                    <select class="form-select mb-3" aria-label="Default select example " required name="sexe">
-                        <option value="1">Masculin</option>
-                        <option value="2">Feminin</option>
-                    </select>
-                    <label for="floatingPassword">Sex</label>
-                </div>
-            
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="prenom" placeholder="Prénom" required name="prenom">
+        <label for="prenom">Prénom</label>
+      </div>
 
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required name="email">
-                    <label for="floatingInput">Email address</label>
-                </div>
+      <div class="form-floating mb-3">
+        <select class="form-select" id="sexe" name="sexe" required>
+          <option value="1">Masculin</option>
+          <option value="2">Féminin</option>
+        </select>
+        <label for="sexe">Sexe</label>
+      </div>
 
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required name="password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-                <div class="cols d-flex justify-content-between">
-                    <div >
-                        <input type="reset" value="Reinitaliser" class="btn btn-danger mt-3">
-                    </div>
-                    <div >
-                        <input type="submit" value="S'enroller" class="btn btn-success mt-3">
-                    </div>
-                </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Email" required name="email">
+        <label for="email">Adresse e-mail</label>
+      </div>
 
-            </form>
+      <div class="form-floating mb-4">
+        <input type="password" class="form-control" id="password" placeholder="Mot de passe" required name="password">
+        <label for="password">Mot de passe</label>
+      </div>
 
-        </main>
+      <div class="d-flex justify-content-between">
+        <button type="reset" class="btn btn-outline-danger px-4 py-2">Réinitialiser</button>
+        <button type="submit" class="btn btn-success px-4 py-2">S’enrôler</button>
+      </div>
+    </form>
+  </div>
+</main>
